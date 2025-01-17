@@ -1,30 +1,45 @@
 import React, { useState } from 'react';
+import KingSaladin from '../assets/images/saladin.png';
+import KingRichard from '../assets/images/richard.png';
+import KingGenghis from '../assets/images/genghis.png';
+import KingSamurai from '../assets/images/samurai.png';
+import IslamicBackground from '../assets/images/islamic-bg.jpg';
+import CrusaderBackground from '../assets/images/crusader-bg.jpg';
+import MongolianBackground from '../assets/images/mongolian-bg.jpg';
+import SamuraiBackground from '../assets/images/samurai-bg.jpg';
+
+
+
+
+
+
+
 
 // قائمة القادة مع البيانات
 const commanders = [
   {
-    name: 'Saladin',
+    name: 'Soltan Saladin',
     civilization: 'Islamic',
-    image: '../assets/images/saladin.png',
-    background: '../assets/images/islamic-bg.jpg',
+    image: KingSaladin,
+    background: IslamicBackground,
   },
   {
     name: 'Richard the Lionheart',
     civilization: 'Crusader',
-    image: '../assets/images/richard.png',
-    background: '../assets/images/crusader-bg.jpg',
+    image: KingRichard,
+    background: CrusaderBackground,
   },
   {
     name: 'Genghis Khan',
     civilization: 'Mongolian',
-    image: '../assets/images/genghis.png',
-    background: '../assets/images/mongolian-bg.jpg',
+    image: KingGenghis,
+    background: MongolianBackground,
   },
   {
     name: 'Samurai Warrior',
     civilization: 'Samurai',
-    image: '../assets/images/samurai.png',
-    background: '../assets/images/samurai-bg.jpg',
+    image: KingSamurai,
+    background: SamuraiBackground,
   },
 ];
 
@@ -69,7 +84,7 @@ const CommanderSelection = ({ onSelectCommander }) => {
               <img
                 src={commander.image}
                 alt={commander.name}
-                className="w-32 h-32 object-cover mx-auto"
+                className="w-28 h-26 object-cover mx-auto"
               />
               {/* اسم القائد */}
               <h3 className="text-xl text-center mt-4">{commander.name}</h3>
