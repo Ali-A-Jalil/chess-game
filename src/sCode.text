@@ -1,0 +1,23 @@
+src/
+├── assets/        // الصور والفيديوهات
+├── components/    // المكونات القابلة لإعادة الاستخدام
+│   ├── Button.js
+│   ├── FormInput.js
+│   └── Navbar.js
+├── features/      // ملفات Redux
+│   ├── auth/
+│   │   ├── authSlice.js
+│   │   └── authAPI.js
+│   └── game/
+│       ├── gameSlice.js
+│       └── gameAPI.js
+├── pages/         // الصفحات
+│   ├── Login.js
+│   ├── CommanderSelection.js
+│   ├── GameSettings.js
+│   ├── Gameplay.js
+│   └── Profile.js
+├── styles/        // ملفات Tailwind الإضافية
+├── App.js         // المكون الرئيسي
+├── index.css      // ملف CSS الأساسي
+└── index.js       // نقطة الدخول
